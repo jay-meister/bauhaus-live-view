@@ -1,19 +1,15 @@
-# Bauhaus
+# Bauhaus Live View:
+Inspired by an interactive part of a Bauhaus exhibition. 
 
-To start your Phoenix server:
+Type characters into the keyboard and watch the server-side rendered templates update in real time:
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+![picture](readme/one.png)
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+![picture](readme/two.png)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+# Get it started:
+- `mix deps.get`
+- `cd assets && npm install`
+- `mix phx.server`
+- [`localhost:4000`](http://localhost:4000)

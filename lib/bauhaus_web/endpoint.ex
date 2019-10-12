@@ -1,6 +1,8 @@
 defmodule BauhausWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :bauhaus
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", BauhausWeb.UserSocket,
     websocket: true,
     longpoll: false

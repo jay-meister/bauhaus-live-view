@@ -1,0 +1,13 @@
+<div style="position: absolute; opacity: 0;">
+  <%= f = form_for :user_input, "#", [phx_change: :validate, phx_submit: :save, autocomplete: "off"] %>
+      <%= text_input f, :typed %>
+  </form>
+</div>
+
+<%= for row <- @letters |> Enum.chunk_every(15) do %>
+  <div style="font-family: Monospace; background:black; color:white; font-size:60px; text-align:center; font-weight:800;">
+    <%= for letter <- row do %>
+      <span><%= letter %></span>
+    <% end %>
+  <div>
+<% end %>

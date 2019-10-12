@@ -12,7 +12,8 @@ config :bauhaus, BauhausWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "0zNNdtNLusSuBwtbujID3u+dsYVWMaP0/j/vUnvL5KDJa66jvi6iC73SmbX2pYdD",
   render_errors: [view: BauhausWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Bauhaus.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Bauhaus.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "SECRET_SALT"]
 
 # Configures Elixir's Logger
 config :logger, :console,
